@@ -30,7 +30,7 @@ jobs:
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v2.3.0
         with:
-          build_dir: build
+          build_dir: docs-build
         env:
           GITHUB_TOKEN: ${{ secrets.PA_TOKEN }}
 
