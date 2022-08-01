@@ -96,7 +96,7 @@ const CustomModal = ({
           <Button
             className={buttonClasses}
             onClick={handleClose}
-            color="secondary">
+            color="primaryy">
             {leftBtnText}
           </Button>
         )}
@@ -105,7 +105,7 @@ const CustomModal = ({
             className={buttonClasses}
             onClick={handleSuccess}
             autoFocus
-            color="primary">
+            color="secondary">
             {rightBtnText}
           </Button>
         )}

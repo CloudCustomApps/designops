@@ -1,0 +1,20 @@
+name: Create pull request
+
+on:
+  push:
+    branches-ignore: master
+jobs:
+  action-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create pull request
+        uses: devops-infra/action-pull-request@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          title: ${{ github.event.commits[0].message }}
+          target_branch: master
+          assignee: ${{ github.actor }}
+          reviewer: 'angyaos'
