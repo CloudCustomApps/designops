@@ -2,7 +2,6 @@ name: Create pull request
 
 on:
   push:
-    branches-ignore: main
 
 jobs:
   action-pull-request:
