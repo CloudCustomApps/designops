@@ -19,7 +19,7 @@ jobs:
           assignee: ${{ github.actor }}
           reviewer: 'angyaos'
           template: .github/pull_request_template.md
-          allow_no_diff: false
+          allow_no_diff: true
 
       # - name: Send Teams Notification
       #   if: success()
