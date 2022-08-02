@@ -11,14 +11,14 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Create pull request
-        uses: devops-infra/action-pull-request@v0.5.0
+        uses: repo-sync/pull-request@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          title: ${{ github.event.commits[0].message }}
-          target_branch: main
-          assignee: ${{ github.actor }}
-          reviewer: 'angyaos'
-          template: .github/pull_request_template.md
+          pr_title: ${{ github.event.commits[0].message }}
+          destination_branch: main
+          pr_assignee: ${{ github.actor }}
+          pr_reviewer: 'angyaos'
+          pr_template: .github/pull_request_template.md
 
       # - name: Send Teams Notification
       #   if: success()
