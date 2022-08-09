@@ -32,6 +32,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1.1.3
         with:
           token: ${{ secrets.PA_TOKEN }}
-          repository: RXPServices/demoproj
+          repository: Capgemini-DE/demoproj
           event-type: check_update
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
