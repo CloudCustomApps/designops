@@ -1,0 +1,30 @@
+name: Create pull request
+
+on:
+  push:
+
+jobs:
+  action-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create pull request
+        uses: repo-sync/pull-request@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: ${{ github.event.commits[0].message }}
+          destination_branch: main
+          pr_assignee: ${{ github.actor }}
+          pr_reviewer: 'angyaos'
+          pr_template: .github/pull_request_template.md
+
+      # - name: Send Teams Notification
+      #   if: success()
+      #   uses: aliencube/microsoft-teams-actions@v0.8.0
+      #   with:
+      #     webhook_uri: ${{ secrets.TEAMS_WEBHOOK }}
+      #     title: ${{ github.event.head_commit.message }} - ${{github.event.head_commit.author.name }}
+      #     summary: Design Ops new Release deployed
+      #     text: Commit Url ${{ github.event.head_commit.url }}
