@@ -21,7 +21,7 @@ const Template = (args, props) => {
   const toggleMenu = () => setShowMenu(true);
 
   const handleInput = (event) => {
-    const searchWord = event.target.value;
+    const searchWord = event.target.value.toLowerCase();
     setSearchTerm(searchWord);
     console.log('searchTerm', searchTerm);
   };
@@ -32,9 +32,10 @@ const Template = (args, props) => {
       if (!searchTerm) {
         return el;
       } else {
-        return el.includes(searchTerm);
+        return el.toLowerCase().includes(searchTerm);
       }
     });
+
     console.log('filtereddata', filteredData);
     setSearchResults(filteredData);
     console.log('searchresult', searchResults);
