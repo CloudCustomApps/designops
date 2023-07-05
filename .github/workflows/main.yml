@@ -19,6 +19,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14
+      
+      - run: |
+          unset NODE_OPTIONS
 
       - name: Setting env variable
         run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
