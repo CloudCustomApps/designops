@@ -98,6 +98,9 @@ const CustomCard = (props) => {
           onClick={() => editAction(props)}>
           Edit
         </Button>
+        <Button>
+          Test
+        </Button>
       </CardActions>
     </Card>
   );
