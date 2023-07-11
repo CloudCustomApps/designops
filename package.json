@@ -1,5 +1,5 @@
 {
-  "homepage": "http://RXPServices.github.io/designops",
+  "homepage": "http://cloudcustomapps.github.io/designops",
   "name": "designops",
   "version": "0.1.0",
   "private": true,
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/somijaiswal23/designops.git"
+    "url": "git+https://github.com/CloudCustomApps/designops.git"
   },
   "scripts": {
     "predeploy": "npm run build-storybook",
@@ -128,7 +128,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/somijaiswal23/designops/issues"
+    "url": "https://github.com/CloudCustomApps/designops/issues"
   },
   "readme": "ERROR: No README data found!",
   "_id": "designops@0.1.0"
