@@ -152,6 +152,10 @@ export default function SignInSide({ firstLabel, handleClick, validation }) {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            <FormControlLabel
+              control={<Checkbox value="agree" color="primary" />}
+              label="Agree"
+            />
             <Button
               type="submit"
               fullWidth
