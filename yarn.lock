@@ -3604,7 +3604,7 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/jest@^0.0.10":
+"@storybook/jest@0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/jest/-/jest-0.0.10.tgz#4fbc43ebc3ae6cce8232d6bd9b56ef710f481e52"
   integrity sha512-qeYLIplpcOUQXboJde5pRCjTvkGmF80jEszRUoNYCNcEPfC2sMK68Wq6Ct8EQj3CoEdJqsK54O2YYh+7D9S+ag==
@@ -3853,7 +3853,7 @@
     read-pkg-up "^7.0.1"
     regenerator-runtime "^0.13.7"
 
-"@storybook/testing-library@^0.0.13":
+"@storybook/testing-library@0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@storybook/testing-library/-/testing-library-0.0.13.tgz#417c87d4ea62895092ec5fdf67027ae201254f45"
   integrity sha512-vRMeIGer4EjJkTgI8sQyK9W431ekPWYCWL//OmSDJ64IT3h7FnW7Xg6p+eqM3oII98/O5pcya5049GxnjaPtxw==
@@ -7249,6 +7249,11 @@ chownr@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
+
+chromatic@^6.7.4:
+  version "6.19.9"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.19.9.tgz#b73548ad31154f3ac5e1291268ee44e4778e3057"
+  integrity sha512-UHrPbPoLnJwd063cRSO0U865VhcATykpMiHsAnNFz5EFRsBvM9wefqyS2Z6W8Ti9J7Fjrf4MV4PA+Q5k2lhFfQ==
 
 chrome-trace-event@^1.0.2:
   version "1.0.3"
@@ -19424,9 +19429,9 @@ widest-line@^3.1.0:
     string-width "^4.0.0"
 
 word-wrap@^1.2.3, word-wrap@~1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
-  integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.4.tgz#cb4b50ec9aca570abd1f52f33cd45b6c61739a9f"
+  integrity sha512-2V81OA4ugVo5pRo46hAoD2ivUJx8jXmWXfUkY4KFNw0hEptvN0QfH3K4nHiwzGeKl5rFKedV48QVoqYavy4YpA==
 
 wordwrap@^1.0.0:
   version "1.0.0"
